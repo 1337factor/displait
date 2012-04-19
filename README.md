@@ -1,4 +1,4 @@
 displait
 ========
 
-Datavis and ogranizational stuff for personal consumption
+Data-vis and organizational stuff for personal consumption
