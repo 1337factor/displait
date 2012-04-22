@@ -2,7 +2,7 @@ var Displait = (function () {
 	var r = {
 		settings: {},
 		clock: function () {
-			setInterval(function () {
+			var renderTime = function () {
 				var date = new Date(),
 					hour = date.getHours(),
 					min = date.getMinutes(),
@@ -45,15 +45,20 @@ var Displait = (function () {
 				$('.' + r.settings.clock.timeMicro).text(hour + ':' + min);
 
 				$('.' + r.settings.clock.timeMacro).text(day + '.' + month + '.' + year);
-			}, 500);
+			};
+			setInterval(renderTime, 500);
 		},
 		draggables: function () {
 			$('body').sortable({
-				revert: true
+				revert: true,
+				containment: "body"
 			});
 		},
 		todoList: function () {
-
+			$('.todo .todo-header').find('ul').hide().end()
+				.find('span').on('click', function () {
+					$(this).next('ul').show();
+				}).end();
 		}
 	}, u = {
 		initialize: function (settings) {
@@ -62,6 +67,7 @@ var Displait = (function () {
 			// Start initializing
 			r.clock();
 			r.draggables();
+			r.todoList();
 
 			return this; // this is u, the public part
 		}
