@@ -21,14 +21,38 @@ body {font-size:62.5%;color:#000;background-color:#fff;font-family:Arial, sans-s
 .todo {margin:1em;border-width:.1em;border-style:solid;border-color:#CCC #CCC #B3B3B3 #CCC;}
 .todo .todo-header {color:#fff;padding:.5em;position:relative;}
 .todo .todo-header h6 {font-size:1.5em;display:inline-block;}
-.todo .todo-header span {display:inline-block;margin:0 0 0 .416666em;font-size:1.2em;}
+.todo .todo-header span {display:inline-block;font-size:1.2em;position:absolute;right:5px;}
 .todo .todo-header ul {padding:.2em;color:#333;text-align:right;width:auto;position:absolute;right:0;border-width:.1em;border-style:solid;border-color:#CCC #CCC #B3B3B3 #CCC;}
 .todo .todo-header ul li {}
 .todo .todo-header ul li a {color:#333;text-decoration:none;font-size:1.2em;display:block;padding:.416666em 0 .416666em .416666em;}
 .todo .todo-header ul li a:hover {color:#fff;background-color:#08C;}
 
+.todo .todo-items {margin:.5em 0 0 0;}
+.todo .todo-items li {border-bottom:1px solid #CCC;margin:0 0 .3em 0;padding:0 0 .3em 0;}
+.todo .todo-items li.last {border:none;}
+.todo .todo-items li form {}
+.todo .todo-items li form input {display:inline-block;vertical-align:top;}
+.todo .todo-items li form p {display:inline-block;font-size:1.2em;width:20em;vertical-align:top;}
+.todo .todo-items li a.button {display:inline-block;margin:0 .416666em;vertical-align:top;}
+.todo .todo-items li.todo-done {}
+.todo .todo-items li h6 {font-size:1.5em;margin:0 .333333em;}
+.todo .todo-items li h6 a {text-decoration:underline;color:#333;}
+.todo .todo-items li h6 a:hover {text-decoration:none;}
+.todo .todo-items li.todo-done ol {margin:.5em 0 0 .5em;}
+.todo .todo-items li.todo-done ol li {}
+.todo .todo-items li.todo-done ol li p {display:inline-block;font-size:1.2em;width:20em;vertical-align:top;}
+.todo .todo-items li.todo-done ol li a {display:inline-block;margin:0 .416666em;vertical-align:top;}
+
 /*META*/
 .board-item {display:inline-block;vertical-align:top;}
+/*BUTTONS*/
+.blue-button {-moz-box-shadow:inset 0 1px 0 0 #bbdaf7;-webkit-box-shadow:inset 0 1px 0 0 #bbdaf7;box-shadow:inset 0 1px 0 0 #bbdaf7;background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #378de5) );background:-moz-linear-gradient( center top, #79bbff 5%, #378de5 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5');background-color:#79bbff;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;border:1px solid #84bbf3;display:inline-block;color:#ffffff;font-size:1.2em;font-weight:bold;padding:5px 10px;text-decoration:none;text-shadow:1px 1px 0 #528ecc;}
+.blue-button:hover {background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff) );background:-moz-linear-gradient( center top, #378de5 5%, #79bbff 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff');background-color:#378de5;}
+.blue-button:active {position:relative;top:1px;}
+
+.green-button {-moz-box-shadow:inset 0 1px 0 0 #c1ed9c;-webkit-box-shadow:inset 0 1px 0 0 #c1ed9c;box-shadow:inset 0 1px 0 0 #c1ed9c;background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #9dce2c), color-stop(1, #8cb82b) );background:-moz-linear-gradient( center top, #9dce2c 5%, #8cb82b 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#9dce2c', endColorstr='#8cb82b');background-color:#9dce2c;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;border:1px solid #83c41a;display:inline-block;color:#ffffff;font-size:1.2em;font-weight:bold;padding:5px 10px;text-decoration:none;text-shadow:1px 1px 0px #689324;}
+.green-button:hover {background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #8cb82b), color-stop(1, #9dce2c) );background:-moz-linear-gradient( center top, #8cb82b 5%, #9dce2c 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#8cb82b', endColorstr='#9dce2c');background-color:#8cb82b;}
+.green-button:active {position:relative;top:1px;}
 /*BORDERS*/
 .border-radius-medium {-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;}
 /*GRADIENTS*/

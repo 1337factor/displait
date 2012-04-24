@@ -59,6 +59,12 @@ var Displait = (function () {
 				.find('span').on('click', function () {
 					$(this).next('ul').show();
 				}).end();
+
+			$('.todo-items li').find('ol').hide().end()
+				.find('h6 a').on('click', function (ev) {
+					$(this).closest('h6').next('ol').toggle();
+					ev.preventDefault();
+				});
 		}
 	}, u = {
 		initialize: function (settings) {
