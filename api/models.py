@@ -29,3 +29,4 @@ class TodoItem(models.Model):
 
 class ShoppingList(models.Model):
 	position = models.IntegerField()
+	text = models.TextField()
