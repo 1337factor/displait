@@ -1,0 +1,77 @@
+[
+	{
+		"pk": 1,
+		"model": "sites.site",
+		"fields": {
+			"domain": "localhost:8080",
+			"name": "displait.com"
+		}
+	},
+	{
+		"pk": 1,
+		"model": "auth.user",
+		"fields": {
+			"username": "danijel",
+			"first_name": "Danijel",
+			"last_name": "Pančić",
+			"is_active": true,
+			"is_superuser": true,
+			"is_staff": true,
+			"last_login": "2010-01-23 00:00:00",
+			"groups": [],
+			"user_permissions": [],
+			"password": "sha1$54678$906777e225a91b58a59071ddb853123a571d4773",
+			"email": "danijel.pancic@gmail.com",
+			"date_joined": "2010-01-23 00:00:00"
+		}
+	},
+	{
+		"pk": 1,
+		"model": "api.profile",
+		"fields": {
+			"settings": "{}",
+			"user": 1
+		}
+	},
+	{
+		"pk": 1,
+		"model": "api.clock",
+		"fields": {
+			"position": 0,
+			"profile": 1
+		}
+	},
+	{
+		"pk": 1,
+		"model": "api.itemlist",
+		"fields": {
+			"position": 1,
+			"list_order": "by_date",
+			"profile": 1
+		}
+	},
+	{
+		"pk": 1,
+		"model": "api.item",
+		"fields": {
+			"order": 0,
+			"done": false,
+			"text": "Finish Dispalit",
+			"created": "2012-05-03 00:00:00",
+			"expiry": "2012-05-31 00:00:00",
+			"item_list": 1
+		}
+	},
+	{
+		"pk": 2,
+		"model": "api.item",
+		"fields": {
+			"order": 1,
+			"done": false,
+			"text": "Make shopping list so you can mark that you need toilet paper",
+			"created": "2012-05-03 00:00:00",
+			"expiry": "2012-05-31 00:00:00",
+			"item_list": 1
+		}
+	}
+]
