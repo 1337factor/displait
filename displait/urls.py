@@ -8,7 +8,9 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
 	# WEB
-	url(r'', include('web.urls')),
+	(r'', include('web.urls')),
+	# API
+	(r'^api/', include('api.urls')),
 
 	# ADMIN
 	url(r'^admin/doc/', include('django.contrib.admindocs.urls')),

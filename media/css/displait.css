@@ -87,4 +87,9 @@ body {font-size:62.5%;color:#000;background-color:#fff;font-family:Arial, sans-s
 .fine-gradient {background: #fff;background: -moz-linear-gradient(top, #fff 0%, #E6E6E6 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff), color-stop(100%,#E6E6E6));background: -webkit-linear-gradient(top, #fff 0%,#E6E6E6 100%);background: -o-linear-gradient(top, #fff 0%,#E6E6E6 100%);background: -ms-linear-gradient(top, #fff 0%,#E6E6E6 100%);background: linear-gradient(top, #fff 0%,#E6E6E6 100%);}
 .dark-gradient {background: #333;background: -moz-linear-gradient(top, #333 0%, #222 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#333), color-stop(100%,#222));background: -webkit-linear-gradient(top, #333 0%,#222 100%);background: -o-linear-gradient(top, #333 0%,#222 100%);background: -ms-linear-gradient(top, #333 0%,#222 100%);background: linear-gradient(top, #333 0%,#222 100%);}
 /*META END*/
+
+/*UTILS*/
+#displait-initial {display:none;}
+/*UTILS END*/
+
 /* DISPLAIT END */

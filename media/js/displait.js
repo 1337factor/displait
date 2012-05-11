@@ -252,13 +252,17 @@ var Displait = (function () {
 			return u;
 		}()),
 		initialize: function (settings) {
-			r.settings = settings;
+			$.get('/api/data/all/user/' + $('#user_id').attr('value'), function (data) {
+				console.log(data)
 
-			// Start initializing
-			r.Clock.initialize();
-			r.UI.initialize();
-			r.ItemList.initialize();
+				r.settings = settings;
 
+
+				// Start initializing
+				r.Clock.initialize();
+				r.UI.initialize();
+				r.ItemList.initialize();
+			}, 'json');
 			return this; // this is u, the public part
 		}
 	};
